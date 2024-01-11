@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+    body{
+        font-family: "Nunito", fantasy;
+    }
+    .hero{
+        width:100%;
+        min-height:100vh;
+        background:#eceaff;
+        color:#525252;
+    }
+    nav{
+        background: #6665ee;
+        width:100%;
+        padding:10px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .logo{
+        width: 120px;
+        font-size: 500%;
+    }
+    .user-pic{
+        width: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+    nav ul{
+        width: 100%;
+        text-align: right;
+
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+
+    }
+    nav ul li a{
+        color:#fff;
+        text-decoration: none;
+    }
+    .sub-menu-wrap{
+        position:absolute;
+        top: 100%;
+        right: 10%;
+        width: 320px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .sub-menu-wrap.open-menu{
+        max-height: 400px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .sub-menu{
+        background: #fff;
+        padding: 20px;
+        margin: 10px;
+    }
+    .user-info{
+        display: flex;
+        align-items: center;
+    }
+    .user-info h4{
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    .sub-menu hr{
+        border: 0;
+        height: 1px;
+        width: 100%;
+        background: #ccc;
+        margin: 15px 0 10px;
+
+    }
+    .sub-menu-link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #525252;
+        margin: 12px 0;
+    }
+    .sub-menu-link p{
+        width: 100%;
+    }
+    .sub-menu-link i{
+        width:40px;
+        background: #e5e5e5;
+        border-radius: 50%;
+        padding: 8px;
+        margin-right: 15px;
+    }
+    .sub-menu-link span{
+        font-size: 22px;
+        transition: transform 0.5s;
+    }
+    .sub-menu-link:hover span{
+        transform: translateX(5px);
+    }
+    .sub-menu-link:hover p{
+        font-weight: 600;
+    }
+    .category {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	margin: 20px;
+	overflow: hidden;
+	padding: 20px;
+	text-align: center;
+    margin-top:100px;
+}
+
+.category h2 {
+	margin-bottom: 10px;
+}
+
+.category ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.category li {
+	display: inline-block;
+	margin: 10px;
+	flex-basis: calc(25% - 20px);
+	max-width: 300px;
+}
+
+.category li .grid-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.category li a {
+	color: #333;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	transition: background-color 0.3s ease;
+	display: block;
+	height: 140px;
+	line-height: 120px;
+	text-align: center;
+	width: 100%;
+    font-size:17px;
+    
+}
+.category li a:hover {
+	background-color: rgb(102,101,238);
+}
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}

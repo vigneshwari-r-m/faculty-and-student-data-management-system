@@ -1,0 +1,54 @@
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination li{
+  list-style: none;
+  padding: 2px;
+  margin: 10px;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #999;
+  color: #999;
+}
+.pagination li.active{
+  background: RGB(78 115 223);
+  color: white;
+  border-color: RGB(78 115 223);
+
+}
+.pagination li a{
+  text-decoration: none;
+  padding: 3px 8px;
+  color: inherit;
+  display: block;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+i.fa-edit{color: lime;}
+i.fa-trash{color: red;}
+
+.items-controller {
+display: flex;
+align-items: center;
+margin-top:20px;
+}
+
+.items-controller h6 {
+margin-right: 10px;
+}
+
+.items-controller select {
+width: 50px;
+color: black;
+margin-right: 10px;
+border: none;
+outline: none;
+border-radius: 5px;
+margin-bottom:10px;
+
+
+}		
